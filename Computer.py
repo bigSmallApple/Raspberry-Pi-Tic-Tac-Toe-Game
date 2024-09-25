@@ -184,20 +184,6 @@ class Computer:
         return tic_tac_toe_board
 
 
-
-                # You might want to add logic here to handle the case where a cell is already occupied
-
-            # You might want to add logic here to handle the case where a cell is already occupied
-
-        
-        
-        
-        
-
-        
-
-
-
    #---------- Functions to check the win ----------#
     def check_win(self, tic_tac_toe_board, player_symbol, opponent_symbol):
         # Check rows and columns for player's win
