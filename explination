@@ -1,0 +1,43 @@
+Components
+Player Class: Manages player information, such as name, email, and password. It also handles user input for selecting game symbols, opponent types, and turns.
+GameBoard Class: Manages the display of the game board on both the Sense HAT and the console. It also handles win screens, option menus, and victory notifications.
+Computer Class: Provides AI functionality with two difficulty levels—weak AI and strong AI. The strong AI is powered by the Minimax algorithm.
+Database Class: Manages the storage and retrieval of data, including player details, game results, and moves, using an SQLite database.
+Main Program: Acts as the core of the game, integrating all components and managing the main game loop, player turns, move processing, and game-over conditions.
+
+Setup
+Hardware Requirements:
+Raspberry Pi with Sense HAT
+Sense HAT library (Install using sudo apt install sense-hat)
+
+Software Requirements:
+Python 3
+SQLite (included in the Python standard library)
+Sense HAT library (Install using sudo apt-get install sense-hat)
+
+How It Works
+Game Logic:
+The game board is represented as a 3x3 array.
+Player 'X' is represented by 1, and player 'O' is represented by 2.
+An empty board is displayed as blank squares on the Sense HAT, with player selections highlighted in white.
+Players take turns, and the game declares a winner when one aligns three symbols in a row, column, or diagonal.
+AI Logic:
+The weak AI randomly selects available moves.
+The strong AI employs the Minimax algorithm to evaluate and choose the optimal move.
+Database:
+Player data, including stats like wins and losses, is stored in an SQLite database.
+Game results and moves are saved for future reference and analysis.
+
+File Structure
+Main.py: The program's entry point, which integrates all components and manages the game flow.
+Player.py: Manages player information and preferences.
+GameBoard.py: Handles the display of the game board on both the Sense HAT and the console.
+Computer.py: Contains the AI logic.
+DataBase.py: Manages the SQLite database for storing game-related data.
+
+Future Enhancements
+Network Play: Add multiplayer functionality for network-based games.
+Web Interface: Develop a web interface to enable remote players to join games through a browser.
+
+Credits
+Developed by Aleks.
